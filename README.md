@@ -19,3 +19,17 @@
 - Separation of API layer from test layer
 - Support parallel execution
 
+# About the Project Structure
+
+src/main/java
+Inclide the follow sub-packages:
+- constants
+- dtos - for serialization/deserialization of Request adn Response of an API method
+- factories - responsible for creating Request objects located in dtos package.
+- enums
+- stpes - sequence of repeatable actions for an API method
+- helpres - all common method 
+
+src/test
+- base
+- tests
