@@ -22,6 +22,7 @@
 # About the Project Structure
 
 src/main/java
+
 Inclide the follow sub-packages:
 - constants
 - dtos - for serialization/deserialization of Request adn Response of an API method
