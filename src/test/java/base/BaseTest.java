@@ -46,7 +46,9 @@ public class BaseTest {
 
     @BeforeSuite(alwaysRun = true)
     public void initSuiteBase() {
-        baseURI = System.getProperty("baseUri");
+          baseURI = System.getProperty("baseUri");
+    // TODO - workaround because of missing baseURI in system config
+//        baseURI = "https://petstore.swagger.io/#/";
 
         if (baseURI == null || baseURI.isEmpty()) {
             Properties appProps = new EnvironmentUtils().getEnvironmentProperties(APP_PROPS);
